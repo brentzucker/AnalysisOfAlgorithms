@@ -1,9 +1,7 @@
 public class SelectionSort {
 	public static void main(String[] args) {
 		String filename = args[0];
-
 		int[] arr = Utility.getArrayFromFile(filename);
-
 		sort(arr);
 	}
 

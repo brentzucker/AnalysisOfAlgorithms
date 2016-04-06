@@ -25,7 +25,7 @@ input_sizes = [
 TRIALS = 10
 MAX_NUM = 100000000
 
-p = 'BubbleSort'
+p = 'MergeSort'
 # for p in programs:
 
 # Reset output file
@@ -64,3 +64,7 @@ for size in input_sizes:
 		# Save time elapsed
 		command = 'echo "{} {}" >> out/{}.out'.format(f, time_elapsed, p)
 		os.system(command)
+print 'done'
+
+command = 'echo "Complete!" | mail brentzucker@gmail.com'
+os.system(command)
