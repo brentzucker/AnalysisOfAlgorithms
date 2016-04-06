@@ -25,7 +25,7 @@ input_sizes = [
 TRIALS = 10
 MAX_NUM = 100000000
 
-p = 'MergeSort'
+p = 'HeapSort'
 # for p in programs:
 
 # Reset output file
