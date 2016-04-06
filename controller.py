@@ -35,7 +35,7 @@ for p in programs:
 		for trial in range(TRIALS):
 			
 			# Create and open input file
-			input_filename = '{}.{}'.format(p, size, trial)
+			input_filename = '{}.{}'.format(size, trial)
 			input_file_path = 'in/{}.in'.format(input_filename)
 
 			# Prepare to Run Java Program
