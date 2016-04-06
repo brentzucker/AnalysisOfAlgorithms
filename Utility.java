@@ -19,7 +19,7 @@ public class Utility {
 
             String line = null;
             while((line = bufferedReader.readLine()) != null) {
-                input += line;
+                input = line;
             }   
 
             bufferedReader.close();         

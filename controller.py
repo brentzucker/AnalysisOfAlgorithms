@@ -35,19 +35,11 @@ for p in programs:
 		for trial in range(TRIALS):
 			
 			# Create and open input file
-			f = '{}-{}.{}'.format(p, size, trial)
-			input_file = 'in/{}.in'.format(f)
-			fo = open(input_file, 'w+')
-
-			# Generate Data Set
-			for i in range(size):
-				num = randint(0, MAX_NUM)
-				# print num
-				fo.write(str(num))
-				fo.write(' ') # delimeter
+			input_filename = '{}.{}'.format(p, size, trial)
+			input_file_path = 'in/{}.in'.format(input_filename)
 
 			# Prepare to Run Java Program
-			command = 'java {} {}'.format(p, input_file)
+			command = 'java {} {}'.format(p, input_file_path)
 			
 			# Start Timer
 			start = time.time()
@@ -61,7 +53,7 @@ for p in programs:
 			time_elapsed = end - start
 
 			# Save time elapsed
-			command = 'echo "{} {}" >> out/{}.out'.format(f, time_elapsed, p)
+			command = 'echo "{} {}" >> out/{}.out'.format(input_filename, time_elapsed, p)
 			os.system(command)
 	print 'done'
 
