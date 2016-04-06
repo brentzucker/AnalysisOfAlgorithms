@@ -7,15 +7,15 @@ input_sizes = [
 	1000,
 	5000,
 	10000,
+	50000,
 	100000,
 	500000,
 	1000000,
 	5000000,
-	10000000
 ]
 
 TRIALS = 10
-MAX_NUM = 100000000
+MAX_NUM = 10000000
 
 for size in input_sizes:
 	for trial in range(TRIALS):
