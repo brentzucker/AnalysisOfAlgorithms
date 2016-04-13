@@ -3,7 +3,6 @@ import os, time
 from random import randint
 
 programs = [
-	'SelectionSort', 
 	'BubbleSort',
 	'MergeSort',
 	'QuickSort',
@@ -18,8 +17,7 @@ input_sizes = [
 	50000,
 	100000,
 	500000,
-	1000000,
-	5000000,
+	1000000
 ]
 
 TRIALS = 10
